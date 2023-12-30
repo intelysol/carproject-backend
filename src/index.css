@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.customStyle {
+  transition: 0.6s ease-in-out;
+}
+
+
+.multiSelectContainer {
+  /* width: ; */
+  /* height: ; */
+  border-color: #eaedf1;
+  border-radius: 10px;
+  /* background-color: lime; */
+}
+
+/* .searchBox { */
+/* border: 2px solid red; */
+/* font-size: 10px; */
+/* min-height: 50px; */
+/* background-color: red; */
+/* } */
+
+.inputField {
+  margin: 5px;
+  /* position: ; */
+  /* background-color: blue; */
+}
+
+/* .chips {
+  background: red;
+} */
+
+/* .optionContainer {
+  border: 2px solid;
+  background-color: red;
+  padding: 0;
+  padding-bottom: 150px;
+} */
+
+.option {
+  color: "#82c035";
+  margin: 0;
+}
+
+.option:last-child {
+  margin-bottom: 100px;
+}
+
+/* .groupHeading {} */
+
+.fileBox {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 400px; */
+  width: 100%;
+  border-radius: 10px;
+  /* border: 2px solid #f6f4fb; */
+  border: 2px solid lightgrey;
+  border-style: dashed;
+  position: relative;
+}
+
+.uploadIcon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 60px;
+  /* transition: 0.5s; */
+  transition: all 0.1ms ease;
+  z-index: 1;
+  cursor: pointer;
+  animation: updateScale 3s linear infinite;
+}
+
+/* .uploadIcon:hover {
+  transform: scale(1.5);
+} */
+
+.uplaodBtnText {
+  color: gray;
+  position: absolute;
+  top: 120px;
+  font-size: 15px;
+}
+
+.customImageBtn {
+  /* background-color: red; */
+  /* width: 400px; */
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.carImages:hover{
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* transform: scale(1.1); */
+}
+
+.slide{
+  cursor: pointer;
+}
+
+@keyframes updateScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
